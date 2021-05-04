@@ -34,4 +34,14 @@ public class TreeTest {
         tree.insert(node,67);
         Assert.assertEquals(56,node.value);
     }
+
+    /**
+     * search node 63 in binary tree
+     */
+    @Test
+    public void searchSpecificNode() {
+        Node node = new Node(56);
+        Tree tree = new Tree();
+        tree.iterativeSearch(node,63);
+    }
 }
