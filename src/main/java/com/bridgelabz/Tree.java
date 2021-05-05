@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 public class Tree {
+
     public void insert(Node node,int value) {
         if (value < node.value) {
             if (node.left != null) {
@@ -18,28 +19,9 @@ public class Tree {
                 node.right = new Node(value);
             }
         }
-
     }
 
-
-//    public boolean serchNode(Node node ,int value) {
-//        while (node == null) {
-//            if (value > node.value) {
-//                node = node.right;
-//                System.out.println("found value at right");
-//            }
-//            if (value < node.value) {
-//                node = node.left;
-//                System.out.println("found value at left");
-//            }
-//            else {
-//                return  true;
-//            }
-//        }
-//        return false;
-//    }
-
-    boolean iterativeSearch(Node root, int value)
+    public boolean iterativeSearch(Node root, int value)
     {
         while (root != null) {
 

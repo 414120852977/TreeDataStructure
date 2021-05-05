@@ -10,7 +10,7 @@ public class Node {
         this.value = value;
         this.left = left;
         this.right = right;
-        this.size = 0;
+        this.size = getSize();
     }
 
     public int getSize() {
